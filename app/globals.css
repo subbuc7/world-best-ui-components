@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(124,92,255,.16), transparent 32rem),
+    radial-gradient(circle at 85% 10%, rgba(0,210,255,.10), transparent 28rem),
+    #07070a;
+  color: #f6f6f7;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+.glass {
+  background: rgba(255,255,255,.055);
+  border: 1px solid rgba(255,255,255,.10);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+.card-hover { transition: transform .25s ease, border-color .25s ease, background .25s ease; }
+.card-hover:hover { transform: translateY(-3px); border-color: rgba(255,255,255,.22); background: rgba(255,255,255,.075); }
+.gradient-text {
+  background: linear-gradient(100deg,#fff 10%,#b8a8ff 48%,#73e6ff 90%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+button, a { -webkit-tap-highlight-color: transparent; }
